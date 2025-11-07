@@ -1,0 +1,210 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Background ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2bc0e4, #1b6164);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== To-Do Container ===== */
+.todo-container {
+  background: #fff;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px;
+  transition: 0.3s ease;
+}
+
+.todo-container h2 {
+  text-align: center;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* ===== Input Area ===== */
+.input-area {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.input-area input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #333;
+}
+
+.input-area button {
+  background: #3366ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.input-area button:hover {
+  background: #1e47d2;
+}
+
+/* ===== Task List ===== */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* Scrollbar Styling */
+.task-list::-webkit-scrollbar {
+  width: 6px;
+}
+.task-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* ===== Each Task Item ===== */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  margin: 5px 0;
+  background: #fafafa;
+  border-radius: 8px;
+  transition: 0.3s;
+  gap: 6px; /* small space between sections */
+}
+
+.task-item:hover {
+  background: #eef4ff;
+}
+
+/* ===== Task Left Section (radio + text) ===== */
+.task-item {
+  position: relative;
+}
+
+.radio-btn,
+.checked {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.task-item span {
+  flex: 1;
+  color: #333;
+  font-size: 15px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== Icons Container (Edit & Delete) ===== */
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* small neat spacing between icons */
+  width: auto;
+  height: 20px;
+}
+
+.edit-btn,
+.delete-btn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+.delete-btn:hover {
+  transform: scale(1.15);
+  filter: brightness(0.9) saturate(2);
+}
+
+/* ===== Footer ===== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer button {
+  background: none;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer button:hover {
+  color: #ff3c3c;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 500px) {
+  .todo-container {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .task-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .input-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-area button {
+    width: 100%;
+  }
+}
