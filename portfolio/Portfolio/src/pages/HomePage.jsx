@@ -1,12 +1,13 @@
 import React from 'react'
-import profileImage from '../assets/PFP.png'
+import ProfileCard from '../components/ProfileCard.jsx'
+// import profileImage from '../assets/PFP.png'
 import LinkButtons from '../components/LinkButtons'
 
 const HomePage = () => {
   return (
 
     <div id="home" className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-12 md:mt-16 flex flex-col items-center gap-3 md:gap-5">
-      <div id="profile-pic" className="mb-6 md:mb-12">
+      {/* <div id="profile-pic" className="mb-6 md:mb-12">
         <img
           src={profileImage}
           className="w-32 h-32 sm:w-40 sm:h-40 md:w-50 md:h-50 rounded-full grayscale-90 ring-2 md:ring-3 ring-white hover:grayscale-0 shadow-xl shadow-yellow-400/40 hover:ring-yellow-400 transition duration-300 hover:scale-105"
@@ -15,7 +16,8 @@ const HomePage = () => {
           height={200}
           loading="eager"
         />
-      </div>
+      </div> */}
+      <ProfileCard />
       <div className="border border-[rgb(var(--border-secondary))] rounded-full p-2 font-mono px-3 md:px-4 text-xs sm:text-sm">
         <a
           id="animations"
