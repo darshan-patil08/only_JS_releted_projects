@@ -6,7 +6,7 @@ const NavBar = ({ toggleTheme, isDark }) => {
   const [indicatorStyle, setIndicatorStyle] = useState({})
   const navRefs = useRef({})
 
-  // Map nav links to their corresponding hrefs
+  // Map nav links to their corresponding 
   const navConfig = {
     Home: 'https://darshanpatil.vercel.app/',
     About: 'https://www.google.com',

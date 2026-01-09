@@ -1,14 +1,13 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-            "@/*": [
-                "./src/*"
-            ]
-        }
+  // ...existing code...
+  "compilerOptions": {
+    // ...existing code...
+    "paths": {
+      "@/*": ["./src/*"]
     },
-    "exclude": [
-        "node_modules",
-        "dist"
-    ]
+    // remove "baseUrl" if present
+    // ...existing code...
+    "ignoreDeprecations": "6.0"
+  }
+  // ...existing code...
 }
