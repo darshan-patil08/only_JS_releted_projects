@@ -1,5 +1,6 @@
 import React from "react";
-import { MoveRight, Download, Github, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { MoveRight, Download, Github, Linkedin, Instagram, Twitter, Eye } from 'lucide-react';
+import resumePDF from '../assets/Darshan patil_removed.pdf';
 
 const LinkButtons = () => {
   return (
@@ -11,16 +12,25 @@ const LinkButtons = () => {
           </a>
           <MoveRight size={20} strokeWidth={0.75} className="ml-2" />
         </div>
-        <div className="hover:scale-105 transition duration-300 w-full sm:w-auto min-w-[180px] h-10 md:h-12 border border-gray-500 flex items-center justify-center px-4 md:px-6 py-2 text-center rounded-full bg-[rgb(var(--bg-tertiary))]">
-          <a href="" className="text-white  font-mono text-sm md:text-base whitespace-nowrap">
+        <a
+          href={resumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-105 transition duration-300 w-full sm:w-auto min-w-[180px] h-10 md:h-12 border border-gray-500 flex items-center justify-center px-4 md:px-6 py-2 text-center rounded-full bg-[rgb(var(--bg-tertiary))]"
+        >
+          <span className="text-white font-mono text-sm md:text-base whitespace-nowrap">
             View my resume
-          </a>
-          <MoveRight size={20} strokeWidth={0.75} color="white" className="ml-2" />
-        </div>
-        <div className="hover:scale-105 transition duration-300 w-full sm:w-auto min-w-[200px] h-10 md:h-12 border border-gray-500 flex items-center justify-center px-4 md:px-6 py-2 text-center rounded-full bg-[rgb(var(--bg-black-always))]">
-          <a className="text-[rgb(var(--text-on-black))] font-mono text-sm md:text-base whitespace-nowrap">Download Resume</a>
-          <Download size={20} strokeWidth={0.75} className="ml-2 text-[rgb(var(--text-on-black))]" />
-        </div>
+          </span>
+          <Eye size={20} strokeWidth={1.5} color="white" className="ml-2" />
+        </a>
+        <a
+          href={resumePDF}
+          download="Darshan_Patil_Resume.pdf"
+          className="hover:scale-105 transition duration-300 w-full sm:w-auto min-w-[200px] h-10 md:h-12 border border-gray-500 flex items-center justify-center px-4 md:px-6 py-2 text-center rounded-full bg-[rgb(var(--bg-black-always))]"
+        >
+          <span className="text-[rgb(var(--text-on-black))] font-mono text-sm md:text-base whitespace-nowrap">Download Resume</span>
+          <Download size={20} strokeWidth={1.5} className="ml-2 text-[rgb(var(--text-on-black))]" />
+        </a>
         <div className=" w-1/2  sm:w-auto min-w-[200px] h-12 md:h-12 flex items-center px-2 md:px-2 py-2 text-center rounded-full bg-[rgb(var(--bg-black-always))]">
           <a href="https://github.com/darshan-patil08" className="hover:scale-105 transition ml-2 duration-300 h-12 md:h-12 w-12 md:w-12 flex items-center justify-center border border-gray-800 rounded-full">
             <Github strokeWidth={2} color="white" />
