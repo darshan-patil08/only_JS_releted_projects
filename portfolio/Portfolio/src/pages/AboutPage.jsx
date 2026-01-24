@@ -4,37 +4,37 @@ import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5, SiCss3, SiJ
 const AboutPage = () => {
   const techLogos = [
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiHtml5 /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiHtml5 /></span>,
       title: "HTML5",
       href: "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiCss3 /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiCss3 /></span>,
       title: "CSS3",
       href: "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiJavascript /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiJavascript /></span>,
       title: "JavaScript",
       href: "https://www.javascript.com/"
     },
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiReact /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiReact /></span>,
       title: "React",
       href: "https://reactjs.org/"
     },
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiTailwindcss /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiTailwindcss /></span>,
       title: "Tailwind CSS",
       href: "https://tailwindcss.com/"
     },
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiTypescript /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiTypescript /></span>,
       title: "TypeScript",
       href: "https://www.typescriptlang.org/"
     },
     {
-      node: <span className="text-[48px] text-[rgb(var(--text-primary))]"><SiMongodb /></span>,
+      node: <span className="text-[32px] sm:text-[40px] md:text-[48px] text-[rgb(var(--text-primary))]"><SiMongodb /></span>,
       title: "MongoDB",
       href: "https://www.mongodb.com/"
     },
@@ -50,16 +50,16 @@ const AboutPage = () => {
         </div>
         <div className='mt-5 w-full max-w-3xl px-4 text-center leading-7'>
           <p id="about-text" className="text-[rgb(var(--text-primary))] text-sm sm:text-base md:text-lg mb-4">
-            My name is Darshan Patil, and I am a Frontend Engineer with 3.5+ years of real-world experience designing fast, usable, and SEO-friendly web applications. My specialty is crafting smooth-looking UIs with React.js, Next.js, Tailwind CSS, and shadcn/ui and bringing things to life with Framer Motion.
+            My name is Darshan Patil, and I am a Frontend Web Developer with a strong foundation in modern web technologies. I work with HTML, CSS, JavaScript, React.js, and TypeScript to build responsive, user-friendly, and performance-oriented web interfaces.
           </p>
           <p id="about-text" className="text-[rgb(var(--text-primary))] text-sm sm:text-base md:text-lg mb-4">
-            Alongside my frontend experience, I possess good full-stack skills in JavaScript and TypeScript, and familiar experience in Node.js, Express, and databases like MongoDB and MySQL. This allows me to manage projects from start-to-finish, from designing smooth UIs through connecting scalable backends.
+            Along with frontend development, I have hands-on knowledge of Node.js and Express.js, and I use MongoDB for databases. I am familiar with authentication systems using JWT, bcrypt, and Supabase, which helps me understand how frontend and backend connect in real-world applications. I also have experience with Version Control (Git/GitHub) and collaborative development workflows.
           </p>
           <p id="about-text" className="text-[rgb(var(--text-primary))] text-sm sm:text-base md:text-lg mb-4">
-            I diveering. Writing elegant, up-to-date code and discovering new tools and trends thrills me.
+            I am currently a final-year BCA student and doing an internship, where I actively work on real projects. Alongside this, I am developing my final-year project, currently focusing on the frontend architecture, UI development, and performance optimization.
           </p>
           <p id="about-text" className="text-[rgb(var(--text-primary))] text-sm sm:text-base md:text-lg mb-4">
-            Outside of work, I enjoy cricket and a good cup of tea, but now I am used to drinking coffee. I'm always up for learning, experimenting, and growing and looking for opportunities wherein I can bring value toward impactful products and inventive teams.
+            I am passionate about continuous learning and regularly explore new tools, frameworks, and best practices in web development. I enjoy building things, improving my skills every day, and contributing to meaningful and impactful digital products.
           </p>
         </div>
         <div className='mt-10 w-full max-w-5xl px-4 sm:px-6 md:px-8 overflow-hidden'>
@@ -68,8 +68,8 @@ const AboutPage = () => {
             speed={80}
             direction="left"
             width="100%"
-            logoHeight={48}
-            gap={100}
+            logoHeight={36}
+            gap={60}
             pauseOnHover
             scaleOnHover
             fadeOut
