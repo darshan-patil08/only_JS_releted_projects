@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LucideArrowRight, Mail, Copy, ExternalLink } from 'lucide-react'
+import { LucideArrowRight, Mail } from 'lucide-react'
 import { toast } from 'sonner'
 
 const ContactPage = () => {
