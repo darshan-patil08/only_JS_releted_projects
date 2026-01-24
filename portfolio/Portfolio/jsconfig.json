@@ -3,11 +3,12 @@
   "compilerOptions": {
     // ...existing code...
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     // remove "baseUrl" if present
     // ...existing code...
-    "ignoreDeprecations": "6.0"
   }
   // ...existing code...
 }

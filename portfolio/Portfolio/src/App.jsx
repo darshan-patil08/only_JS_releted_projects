@@ -1,4 +1,5 @@
 import React, { useState, lazy, Suspense } from 'react'
+import { Toaster } from 'sonner'
 import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
@@ -17,6 +18,13 @@ const App = () => {
 
   return (
     <div className={`${isDark ? 'dark' : ''} min-h-screen bg-[rgb(var(--bg-primary))]`}>
+      <Toaster
+        theme={isDark ? 'dark' : 'light'}
+        richColors
+        toastOptions={{
+          duration: 3000,
+        }}
+      />
       <NavBar toggleTheme={toggleTheme} isDark={isDark} />
       <HomePage />
       <Suspense fallback={<div className="w-full h-20" />}>
