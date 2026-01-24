@@ -44,13 +44,7 @@ const HomePage = () => {
       </h1>
       <div className='flex flex-col items-center justify-center px-4 md:px-8 py-6 md:py-8'>
         <p id="description" className="text-[rgb(var(--text-secondary))] w-full max-w-2xl text-center text-sm sm:text-base md:text-lg leading-relaxed">
-          I build fast, accessible, and SEO-friendly web applications using
-          React.js, Next.js, Tailwind CSS, and shadcn/ui. With 3.5+ years of
-          experience and strong full-stack skills in JavaScript and TypeScript,
-          I am passionate about creating smooth user interfaces, maintaining
-          excellent UI/UX, and writing clean, maintainable code. I craft modern
-          user experiences while also delivering scalable backend integrations
-          when needed.
+          I build fast and SEO-friendly web applications using React.js, Next.js, Tailwind CSS, and shadcn/ui, with a strong focus on UI/UX and clean code. I also have hands-on experience with JavaScript, TypeScript, Node.js, Express, MongoDB, and authentication using JWT and Supabase, and I’m constantly learning to grow as a modern web developer.
         </p>
         <LinkButtons />
       </div>
