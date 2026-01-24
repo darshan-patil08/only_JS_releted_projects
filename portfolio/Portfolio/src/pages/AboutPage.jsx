@@ -43,10 +43,10 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className='min-h-screen w-full py-10 px-4'>
+    <div id="about" className='min-h-screen w-full py-10 px-4'>
       <section style={{ opacity: 1, transform: 'none' }} className="my-10 flex w-full scroll-mt-28 flex-col items-center md:mb-20">
         <div className='text-center'>
-          <h2 id="about" className="font-bold text-[rgb(var(--text-primary))] mt-2 mb-4 md:mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl text-center px-4 max-w-4xl leading-tight">About Me</h2>
+          <h2 className="font-bold text-[rgb(var(--text-primary))] mt-2 mb-4 md:mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl text-center px-4 max-w-4xl leading-tight">About Me</h2>
         </div>
         <div className='mt-5 w-full max-w-3xl px-4 text-center leading-7'>
           <p id="about-text" className="text-[rgb(var(--text-primary))] text-sm sm:text-base md:text-lg mb-4">
@@ -62,7 +62,7 @@ const AboutPage = () => {
             Outside of work, I enjoy cricket and a good cup of tea, but now I am used to drinking coffee. I'm always up for learning, experimenting, and growing and looking for opportunities wherein I can bring value toward impactful products and inventive teams.
           </p>
         </div>
-        <div className='mt-10 max-w-5xl px-4 sm:px-6 md:px-8'>
+        <div className='mt-10 w-full max-w-5xl px-4 sm:px-6 md:px-8 overflow-hidden'>
           <LogoLoop
             logos={techLogos}
             speed={80}

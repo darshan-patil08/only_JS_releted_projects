@@ -2,6 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,6 +15,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Handle PDF files as assets
+  assetsInclude: ['**/*.pdf'],
+
   build: {
     // Target modern browsers for smaller bundle
     target: 'es2020',
